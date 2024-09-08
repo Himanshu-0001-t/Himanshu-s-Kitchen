@@ -11,7 +11,7 @@ const SearchComponent = ({ onSearch }: { onSearch: (query: string) => void }) =>
     };
 
     return (
-        <form onSubmit={handleSearch} className="flex items-center justify-center max-w-lg mx-auto mt-10">
+        <form onSubmit={handleSearch} className="flex items-center justify-center max-w-lg mx-auto mt-1 p-5">
             <input
                 type="text"
                 value={searchTerm}

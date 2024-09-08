@@ -22,7 +22,6 @@ const Header = () => {
                     <Link to="/" className="hover:text-orange-500">Himanshu's Kitchen</Link>
                 </div>
 
-
                 <nav className="hidden md:flex space-x-8">
                     <Link to="/" className="text-gray-600 hover:text-orange-500 transition duration-300">Home</Link>
                     <Link to="/random-recips" className="text-gray-600 hover:text-orange-500 transition duration-300">Random Recipes</Link>
@@ -47,6 +46,8 @@ const Header = () => {
                 <Link to="/" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-orange-500" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>Home</Link>
                 <Link to="/random-recips" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-orange-500" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>Random Recipes</Link>
                 <Link to="/categories" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-orange-500" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>Categories</Link>
+                <SearchComponent onSearch={handleSearch} />
+
             </nav>
         </header >
     );

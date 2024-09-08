@@ -31,7 +31,7 @@ interface recipes {
     strMeal: string
 }
 let recipesLetter: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', ' r', 'p', 'v', 'w']
-let num = Math.floor(Math.random() * recipesLetter.length)
+let num = Math.floor(Math.random() * recipesLetter.length - 1)
 let letter = recipesLetter[num]
 const Home = () => {
     const { data: recipes, isLoading, error } = useQuery({
@@ -83,13 +83,13 @@ const Home = () => {
 
             <section className="bg-orange-500 text-white py-16">
                 <div className="max-w-7xl mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
-                    <p className="text-lg mb-8">Sign up to get the latest recipes, tips, and updates delivered right to your inbox.</p>
-                    <Link to="/signup" className="bg-white text-orange-500 py-2 px-6 rounded-lg text-lg font-semibold hover:bg-gray-200 transition duration-300">
-                        Sign Up
-                    </Link>
+                    <h2 className="text-3xl font-bold mb-4">Join Our Recipe Community</h2>
+                    <p className="text-lg mb-8">
+                        Discover new recipes, cooking tips, and the latest updates on our blog.
+                    </p>
                 </div>
             </section>
+
         </div>
     );
 };
