@@ -65,7 +65,7 @@ const SingleCategoryItem = () => {
                             />
 
                             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
-                                <span className="text-white text-lg font-bold">{strMeal}</span>
+                                <span className="text-white text-lg font-bold text-center">{strMeal}</span>
                             </div>
                         </Link>
                     );
