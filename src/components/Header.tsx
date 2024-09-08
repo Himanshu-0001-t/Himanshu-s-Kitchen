@@ -15,6 +15,7 @@ const Header = () => {
     const toggleRegionDropdown = () => setIsRegionDropdownOpen(!isRegionDropdownOpen);
 
     const handleSearch = (query: string) => {
+        close()
         navigate(`/search-result/${query}`);
     };
     const close = () => {
