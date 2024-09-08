@@ -30,7 +30,7 @@ interface recipes {
     strCategory: string
     strMeal: string
 }
-let recipesLetter: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', ' r', 'p', 'v', 'w']
+let recipesLetter: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'r', 'p', 'v', 'w']
 let num = Math.floor(Math.random() * recipesLetter.length - 1)
 let letter = recipesLetter[num]
 const Home = () => {

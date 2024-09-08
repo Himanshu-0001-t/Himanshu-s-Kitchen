@@ -7,6 +7,7 @@ import RandomMeal from "./components/RandomMeal"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import SearchResult from "./components/searchResult"
+import AreaResult from "./components/areaResult"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/meal" element={<MealDetail />} />
           <Route path="/random-recips" element={<RandomMeal />} />
           <Route path="/search-result/:name/" element={<SearchResult />} />
+          <Route path="/area-result/:name/" element={<AreaResult />} />
         </Routes>
       </BrowserRouter>
     </>
